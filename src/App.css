@@ -75,6 +75,10 @@ input[type="text"] {
   line-height: 40px !important;
 }
 
+.pagination-row {
+  justify-content: center;
+}
+
 .page-link {
   padding: 0.25rem 0.5rem !important;
 }

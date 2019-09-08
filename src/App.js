@@ -71,7 +71,7 @@ function App() {
             </div>
           )}
         </Row>        
-        <Row>
+        <Row className="pagination-row">
           {movies && movies.length > 0 && (
             <AppPagination 
               totalRecords={totalRecords} 

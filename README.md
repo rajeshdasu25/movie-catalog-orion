@@ -6,8 +6,8 @@ This project was developed as part of POC for Orion Governance
 
 By following the below steps, you can run the application in your local environment:
 
-### `git clone https://github.com/rajeshdasu25/movie-catalog-orion-poc.git`
-### `cd movie-catalog-orion-poc`
+### `git clone https://github.com/rajeshdasu25/movie-catalog-orion.git`
+### `cd movie-catalog-orion`
 ### `npm i`
 ### `npm start`
 

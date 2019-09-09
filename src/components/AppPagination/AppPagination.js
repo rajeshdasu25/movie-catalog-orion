@@ -7,15 +7,16 @@ const AppPagination = (props) => {
   } = props;
 
   const totalPages = Math.ceil(totalRecords / 10);
-  let pageNumbers = Array.apply(null, {length: totalPages}).map(Number.call, Number);
+  let pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(<Pagination.Item onClick={ () => updatePageLimit(i) } className={(pageNumber === i ? 'active' : '')} key={i}>{i}</Pagination.Item>);
+  }
 
   return (
     <div className="pagination-container">
       <Pagination>
         <Pagination.First onClick={ () => updatePageLimit(1) } />
-        {pageNumbers.map(item => {
-          return (item !== 0) && <Pagination.Item onClick={ () => updatePageLimit(item) } className={(pageNumber === item ? 'active' : '')} key={item}>{item}</Pagination.Item>
-        })}
+        {pageNumbers}
         <Pagination.Last onClick={ () => updatePageLimit(totalPages) } />
       </Pagination>
     </div>

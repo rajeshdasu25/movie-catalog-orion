@@ -79,6 +79,11 @@ input[type="text"] {
   justify-content: center;
 }
 
-.page-link {
+a.page-link {
   padding: 0.25rem 0.5rem !important;
+}
+
+a.page-link:focus {
+  outline: 0;
+  box-shadow: none !important;
 }
